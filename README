@@ -1,0 +1,74 @@
+EXTERNALS
+=========
+
+Repository for all packages that are not available (or does not have the correct
+version or build variant) in the Arch offficial and user repositories. It
+contains a small script, that helps update, build and install these packages.
+
+> This software is may or may not be helpful for others. (Different developers
+> on different distributions have different needs.) Because of that, it is not
+> highly customizable and can only be extended manually -- and this will not
+> change in the future!
+
+
+Install
+-------
+
+    $ git clone --recursive https://github.com/petervaro/externals.git
+    $ bash install.sh
+
+
+Update packages
+---------------
+
+    $ bash install.sh -u
+
+
+Build and install specific packages
+-----------------------------------
+
+    $ bash install.sh -p pkg1 -p pkg2
+
+
+Available options
+-----------------
+
+    -c, --compiler
+        Specify C compiler
+
+    -i, --include
+        Specify header(s) install destination
+
+    -l, --library
+        Specify library(es) install destination
+
+    -b, --binary
+        Specify binary(es) install destination
+
+    -s, --share
+        Specify share(s) install destination
+
+    -p, --package
+        Specify package(s) to build and install
+
+    -u, --update
+        Update all packages and exit
+
+
+License
+-------
+
+Copyright (C) 2016 Peter Varo
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program, most likely a file in the root directory, called 'LICENSE'.
+If not, see <http://www.gnu.org/licenses>.
