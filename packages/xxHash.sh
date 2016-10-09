@@ -5,7 +5,7 @@
 DIR="$1";
 TMP="$2";
 CC="$3";
-CFLAGS="-std=c11 -O3";
+CFLAGS="-std=c11 -O3 -march=native";
 
 include="$4";
 library="$5";
